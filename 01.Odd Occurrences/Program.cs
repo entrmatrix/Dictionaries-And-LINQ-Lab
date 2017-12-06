@@ -11,9 +11,10 @@ namespace _01.Odd_Occurrences
         static void Main()
         {
             var input = Console.ReadLine().ToLower().Split(new[] { ' ' },StringSplitOptions.RemoveEmptyEntries);
+            
             var sequenceOfWords = new Dictionary<string, int>();
 
-            foreach (var word in input)
+            foreach (var word in input) 
             {
                 if (sequenceOfWords.ContainsKey(word))
                 {
@@ -25,7 +26,7 @@ namespace _01.Odd_Occurrences
                 }
             }
 
-            var oddCount = new List<string>();
+            var oddCount = new List<string>(); // creating a new list which will store the odd count
 
             foreach (var pair in sequenceOfWords)
             {
