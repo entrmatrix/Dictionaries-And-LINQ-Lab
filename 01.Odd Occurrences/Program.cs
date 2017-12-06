@@ -36,7 +36,7 @@ namespace _01.Odd_Occurrences
                 }
             }
 
-            Console.WriteLine(string.Join(" ",oddCount));
+            Console.WriteLine(string.Join(" ",oddCount)); //print the list
 
         }
     }
